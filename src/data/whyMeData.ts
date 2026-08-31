@@ -1,24 +1,24 @@
 import type { Header } from '@/types/headerSection';
 
-export interface FeatureItem {
-  skill: string;
-  withMe: boolean;
-  other: boolean;
-}
-
-export interface TableHeaders {
+interface TableHeader {
   skill: string;
   withMe: string;
   other: string;
 }
 
-export interface ComparisonData {
-  header: Header;
-  tableHeaders: TableHeaders;
-  features: FeatureItem[];
+interface Feature {
+  skill: string;
+  withMe: boolean;
+  other: boolean;
 }
 
-export const comparisonData: ComparisonData = {
+export interface WhyMeData {
+  header: Header;
+  tableHeaders: TableHeader;
+  features: Feature[];
+}
+
+export const whyMeData: WhyMeData = {
   header: {
     title: 'Not Your Typical Frontend Developer',
     subtitle:
