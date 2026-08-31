@@ -16,12 +16,12 @@ export interface ProjectItem {
   link: string;
 }
 
-export interface ProjectsData {
+export interface PortfolioData {
   header: Header;
   projects: ProjectItem[];
 }
 
-export const portfolio = {
+export const portfolioData: PortfolioData = {
   header: {
     title: 'Bridging Design and Development',
     subtitle:

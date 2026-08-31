@@ -1,7 +1,14 @@
 import SectionContainer from '@/components/layouts/SectionContainer';
+import SectionTitle from '@/components/shared/SectionTitle';
+import { faqData } from '@/data/faqData';
 
 const FaqSection = () => {
-  return <SectionContainer sectionId='faq'>FaqSection</SectionContainer>;
+  const header = faqData.header;
+  return (
+    <SectionContainer sectionId='faq'>
+      <SectionTitle title={header.title} subtitle={header.subtitle} />
+    </SectionContainer>
+  );
 };
 
 export default FaqSection;

@@ -21,18 +21,18 @@ const WhyMeSection = () => {
       />
 
       <div className='w-full border p-3 lg:p-6 bg-black'>
-        <div className='grid grid-cols-[2fr_1fr_1fr] lg:grid-cols-3 font-bold border-b  text-white'>
-          <div className='px-2 sm:px-4 lg:px-6 py-3 lg:py-4.5'>
+        <div className='grid grid-cols-[2fr_1fr_1fr] lg:grid-cols-3 font-bold text-white'>
+          <div className='px-2 sm:px-4 lg:px-6 py-3 lg:py-4.5 border-b'>
             {whyMeData.tableHeaders.skill}
           </div>
-          <div className='px-2 sm:px-4 lg:px-6 py-3 lg:py-4.5 bg-primary-400'>
+          <div className='px-2 sm:px-4 lg:px-6 py-3 lg:py-4.5 bg-primary-400 border-b border-white/40'>
             {whyMeData.tableHeaders.withMe}
           </div>
-          <div className='px-2 sm:px-4 lg:px-6 py-3 lg:py-4.5'>
+          <div className='px-2 sm:px-4 lg:px-6 py-3 lg:py-4.5 border-b'>
             {whyMeData.tableHeaders.other}
           </div>
         </div>
-        <div className='flex flex-col divide-y'>
+        <div className='flex flex-col'>
           {whyMeData.features.map((feature, index) => (
             <div
               key={index}
@@ -40,10 +40,21 @@ const WhyMeSection = () => {
                 'grid grid-cols-[2fr_1fr_1fr] lg:grid-cols-3 items-center '
               )}
             >
-              <div className='text-xs sm:text-sm lg:tex-lg px-2 sm:px-4 lg:px-6 py-3 lg:py-4.5 wrap-break-word'>
+              <div
+                className={cn(
+                  'text-xs sm:text-sm lg:tex-lg px-2 sm:px-4 lg:px-6 py-3 lg:py-4.5 wrap-break-word',
+                  index !== whyMeData.features.length - 1 && 'border-b'
+                )}
+              >
                 {feature.skill}
               </div>
-              <div className='bg-primary-400 px-2 sm:px-4 lg:px-6 py-3 lg:py-4.5 h-full flex justify-center items-center'>
+              <div
+                className={cn(
+                  'bg-primary-400 px-2 sm:px-4 lg:px-6 py-3 lg:py-4.5 flex items-center h-full',
+                  index !== whyMeData.features.length - 1 &&
+                    'border-b border-white/40'
+                )}
+              >
                 {feature.withMe ? (
                   <div className='size-5.5 rounded-full flex justify-center items-center bg-white shrink-0'>
                     <FiCheck className='size-3.5 text-primary-400 stroke-3' />
@@ -54,7 +65,12 @@ const WhyMeSection = () => {
                   </div>
                 )}
               </div>
-              <div className='px-2 sm:px-4 lg:px-6 py-3 lg:py-4.5 h-full flex justify-center items-center'>
+              <div
+                className={cn(
+                  'px-2 sm:px-4 lg:px-6 py-3 lg:py-4.5 flex items-center h-full',
+                  index !== whyMeData.features.length - 1 && 'border-b'
+                )}
+              >
                 {feature.other ? (
                   <div className='size-5.5 rounded-full flex justify-center items-center bg-white shrink-0'>
                     <FiCheck className='size-3.5 text-primary-400 stroke-3' />
