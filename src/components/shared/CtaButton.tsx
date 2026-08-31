@@ -8,7 +8,7 @@ interface CtaButtonProps {
 
 const CtaButton = ({ children }: CtaButtonProps) => {
   return (
-    <Button asChild className='flex gap-2 lg:gap-2.25'>
+    <Button asChild className='flex gap-2 lg:gap-2.25 items-center'>
       <a href='#contact'>
         <IoMail /> {children}
       </a>

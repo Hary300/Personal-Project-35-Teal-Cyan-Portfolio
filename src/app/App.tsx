@@ -1,4 +1,5 @@
 import Footer from '@/components/layouts/Footer';
+import TickerBanner from '@/components/shadcn-space/marquee/marquee-02';
 import HeroSection from '@/sections/01-hero';
 import AboutSection from '@/sections/02-about';
 import SkillSection from '@/sections/03-skill';
@@ -13,6 +14,7 @@ function App() {
   return (
     <>
       <HeroSection />
+      <TickerBanner />
       <AboutSection />
       <SkillSection />
       <WhyMeSection />
