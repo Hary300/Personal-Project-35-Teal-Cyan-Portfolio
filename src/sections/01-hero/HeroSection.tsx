@@ -3,7 +3,6 @@ import MobileHeader from '@/components/layouts/MobileHeader';
 import SectionContainer from '@/components/layouts/SectionContainer';
 import CtaButton from '@/components/shared/CtaButton';
 import GridBackgroundDecoration from '@/components/shared/GridBackgroundDecoration';
-import { Button } from '@/components/ui/button';
 import { heroData } from '@/data/heroData';
 
 const HeroSection = () => {

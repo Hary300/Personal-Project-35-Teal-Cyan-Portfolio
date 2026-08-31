@@ -23,7 +23,7 @@ const SectionContainer = ({
     <section
       id={sectionId}
       className={cn(
-        'max-w-360 pt-10 pb-10 lg:pt-20 lg:pb-20 px-4 sm:px-10 lg:px-30 mx-auto',
+        'max-w-360 pt-10 pb-10 lg:pt-20 lg:pb-20 px-4 sm:px-10 lg:px-15 xl:px-30 mx-auto',
         className
       )}
     >
