@@ -42,7 +42,7 @@ const WhyMeSection = () => {
             >
               <div
                 className={cn(
-                  'text-xs sm:text-sm lg:tex-lg px-2 sm:px-4 lg:px-6 py-3 lg:py-4.5 wrap-break-word',
+                  'text-xs sm:text-sm lg:tex-lg px-2 sm:px-4 lg:px-6 py-3 lg:py-4.5 wrap-break-word text-neutral-25',
                   index !== whyMeData.features.length - 1 && 'border-b'
                 )}
               >
