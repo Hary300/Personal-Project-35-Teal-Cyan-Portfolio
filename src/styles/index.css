@@ -131,6 +131,9 @@
   --color-neutral-900: #181d27;
   --color-neutral-950: #0a0d12;
 
+  /* Secondary */
+  --color-secondary-100: #f3b64c;
+
   /* Base */
   --color-white: #ffffff;
   --color-black: #000000;
