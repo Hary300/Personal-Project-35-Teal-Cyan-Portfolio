@@ -6,21 +6,21 @@ import {
   FaTiktok,
 } from 'react-icons/fa';
 
-export interface FormField {
-  label: string;
+export type Label = 'Name' | 'Email' | 'Subject' | 'Message';
+export type FieldType = 'text' | 'email' | 'textarea';
+
+interface Field {
+  name: 'name' | 'email' | 'subject' | 'message';
+  label: Label;
   placeholder: string;
-  type: string;
+  type: FieldType;
 }
 
 export interface ContactForm {
   title: string;
   highlightedTitle: string;
   subtitle: string;
-  fields: {
-    name: FormField;
-    email: FormField;
-    message: FormField;
-  };
+  fields: Field[];
   buttonText: string;
 }
 
@@ -31,15 +31,13 @@ export interface SocialMediaItem {
   url: string;
 }
 
+interface Detail {
+  label: string;
+  value: string;
+}
+
 export interface ContactInfo {
-  address: {
-    label: string;
-    value: string;
-  };
-  contact: {
-    label: string;
-    value: string;
-  };
+  details: Detail[];
   socialMedia: {
     label: string;
     items: SocialMediaItem[];
@@ -54,38 +52,49 @@ export interface ContactData {
 
 export const contactData: ContactData = {
   form: {
-    title: "Let's ",
-    highlightedTitle: 'Build Something Great',
+    title: "Let's Build Something Great",
+    highlightedTitle: 'Build Something',
     subtitle:
       "Got an idea, a project, or just want to connect? I'm always open to new conversations.",
-    fields: {
-      name: {
+    fields: [
+      {
+        name: 'name',
         label: 'Name',
         placeholder: 'Enter your name',
         type: 'text',
       },
-      email: {
+      {
+        name: 'email',
         label: 'Email',
         placeholder: 'Enter your email',
         type: 'email',
       },
-      message: {
+      {
+        name: 'subject',
+        label: 'Subject',
+        placeholder: 'Enter your Subject',
+        type: 'text',
+      },
+      {
+        name: 'message',
         label: 'Message',
         placeholder: 'Enter your message',
         type: 'textarea',
       },
-    },
+    ],
     buttonText: 'Send Message',
   },
   info: {
-    address: {
-      label: 'Address',
-      value: 'Jakarta, Indonesia',
-    },
-    contact: {
-      label: 'Contact',
-      value: '(+62) 1234567890',
-    },
+    details: [
+      {
+        label: 'Address',
+        value: 'Jakarta, Indonesia',
+      },
+      {
+        label: 'Contact',
+        value: '(+62) 1234567890',
+      },
+    ],
     socialMedia: {
       label: 'Social Media',
       items: [
