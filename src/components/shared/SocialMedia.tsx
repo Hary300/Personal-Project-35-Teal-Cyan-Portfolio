@@ -16,7 +16,7 @@ const SocialMedia = () => {
             className='rounded-full border border-neutral-800 aspect-square shrink-0 flex justify-center items-center'
           >
             <a href={item.url} target='_blank' rel='noopener noreferrer'>
-              <Icon className='text-neutral-25/90' />
+              <Icon />
             </a>
           </Button>
         );
