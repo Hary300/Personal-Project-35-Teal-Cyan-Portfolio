@@ -34,7 +34,7 @@ export const testimonialData: TestimonyData = {
       headline: 'More users converted after redesign',
       rating: 5,
       content:
-        'Working with Edwin has been a fantastic experience. His attention to detail and commitment to quality are evident in every project. He consistently delivers results that exceed expectations, making him a valuable asset to any team.',
+        'Working with Hary has been a fantastic experience. His attention to detail and commitment to quality are evident in every project. He consistently delivers results that exceed expectations, making him a valuable asset to any team.',
       author: {
         name: 'Pablo Stanley',
         role: 'Product Manager at Finovate',
@@ -49,7 +49,7 @@ export const testimonialData: TestimonyData = {
       headline: 'Improved user engagement and sign-ups',
       rating: 5,
       content:
-        "Edwin's expertise in frontend development is remarkable. He brings creativity and innovation to the table, ensuring that every project is not only functional but also visually appealing.",
+        "Hary's expertise in frontend development is remarkable. He brings creativity and innovation to the table, ensuring that every project is not only functional but also visually appealing.",
       author: {
         name: 'Pablo Stanley',
         role: 'Product Manager at Finovate',
@@ -61,7 +61,7 @@ export const testimonialData: TestimonyData = {
       id: 3,
       rating: 5,
       content:
-        "Edwin's work ethic and dedication are truly inspiring. He approaches challenges with a positive attitude and consistently finds effective solutions.",
+        "Hary's work ethic and dedication are truly inspiring. He approaches challenges with a positive attitude and consistently finds effective solutions.",
       author: {
         name: 'Pablo Stanley',
         role: 'Product Manager at Finovate',
@@ -73,7 +73,7 @@ export const testimonialData: TestimonyData = {
       id: 4,
       rating: 5,
       content:
-        'Edwin has a unique ability to transform complex ideas into user-friendly designs. His contributions have significantly enhanced our projects.',
+        'Hary has a unique ability to transform complex ideas into user-friendly designs. His contributions have significantly enhanced our projects.',
       author: {
         name: 'Pablo Stanley',
         role: 'Product Manager at Finovate',
